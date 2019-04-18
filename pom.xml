@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.hanson</groupId>
+    <artifactId>spring-annotation-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <!--1、IOC容器部分-->
+        <module>spring-annotation-ioc</module>
+        <!--2、AOP面向切面部分-->
+        <module>spring-annotation-aop</module>
+        <!--3、TX事务部分-->
+        <module>spring-annotation-tx</module>
+        <!--4、扩展部分-->
+        <module>spring-annotation-extend</module>
+    </modules>
+
+    <name>spring-annotation-parent :: Spring基于注解开发总结</name>
+
+
+</project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-annotation-ioc</artifactId>
+        <groupId>com.hanson</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>annotation-bean-lifecycle</artifactId>
+    <packaging>pom</packaging>
+
+    <name>annotation-bean-lifecycle :: 使用注解指定Bean的初始化方法和销毁方法</name>
+    <modules>
+        <!--1、使用注解@Bean指定Bean的初始化和销毁方法-->
+        <module>annotation-bean-init-destory</module>
+    </modules>
+
+
+    <properties>
+        <spring.version>4.3.12.RELEASE</spring.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

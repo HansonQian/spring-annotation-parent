@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-annotation-parent</artifactId>
+        <groupId>com.hanson</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-annotation-ioc</artifactId>
+    <packaging>pom</packaging>
+
+    <name>spring-annotation-ioc :: 基于注解开发IOC</name>
+    <modules>
+        <!--1、基于注解的组件注册-->
+        <module>annotation-component-registration</module>
+        <!--2、基于注解指定Bean组件的初始化和销毁方法-->
+        <module>annotation-bean-lifecycle</module>
+        <!--3、基于注解实现Bean属性赋值-->
+        <module>annotation-attribute-assignment</module>
+        <!--4、基于注解实现组件自动装配-->
+        <module>annotation-automatic-assemble</module>
+    </modules>
+
+</project>

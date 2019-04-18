@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-annotation-ioc</artifactId>
+        <groupId>com.hanson</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>annotation-automatic-assemble</artifactId>
+    <packaging>pom</packaging>
+
+    <name>annotation-automatic-assemble :: 基于注解实现Bean的自动装配</name>
+    <modules>
+        <!--1、使用@Autowired、@Qualifer、@Primary完成组件自动装配-->
+        <module>annotation-autowired-qualifer-primary</module>
+        <!--2、使用@Resource、@Inject完成组件自动装配-->
+        <module>annotation-resource-inject</module>
+        <!--3、在方法和构造函数上完成自动装配-->
+        <module>annotation-method-constructor</module>
+        <!--4、注入Spring底层组件以及原理-->
+        <module>annotation-aware</module>
+        <!--5、使用@Profile完成根据环境来注册组件-->
+        <module>annotation-profile</module>
+    </modules>
+
+
+    <properties>
+        <spring.version>4.3.12.RELEASE</spring.version>
+        <inject.version>1.4.2</inject.version>
+        <c3p0.version>0.9.1.2</c3p0.version>
+        <mysql.version>5.1.45</mysql.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.sonatype.sisu</groupId>
+                <artifactId>sisu-inject-bean</artifactId>
+                <version>${inject.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>c3p0</groupId>
+                <artifactId>c3p0</artifactId>
+                <version>${c3p0.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+
+</project>
