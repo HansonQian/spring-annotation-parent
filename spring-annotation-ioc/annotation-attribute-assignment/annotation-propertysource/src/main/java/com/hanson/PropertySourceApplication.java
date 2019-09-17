@@ -1,6 +1,6 @@
 package com.hanson;
 
-import com.hanson.bean.ProperySourceBean;
+import com.hanson.bean.PropertySourceBean;
 import com.hanson.config.PropertySourceConfiguration;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -9,7 +9,7 @@ public class PropertySourceApplication {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.register(PropertySourceConfiguration.class);
         context.refresh();
-        ProperySourceBean bean = context.getBean(ProperySourceBean.class);
+        PropertySourceBean bean = context.getBean(PropertySourceBean.class);
 
         System.out.println(bean);
 

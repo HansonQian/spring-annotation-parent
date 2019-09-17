@@ -2,7 +2,7 @@ package com.hanson.bean;
 
 import org.springframework.beans.factory.annotation.Value;
 
-public class ProperySourceBean {
+public class PropertySourceBean {
 
     @Value("${app.name}")
     private String appName;
@@ -10,7 +10,7 @@ public class ProperySourceBean {
 
     @Override
     public String toString() {
-        return "ProperySourceBean{" +
+        return "PropertySourceBean{" +
                 "appName='" + appName + '\'' +
                 '}';
     }

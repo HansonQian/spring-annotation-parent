@@ -1,6 +1,6 @@
 package com.hanson.config;
 
-import com.hanson.bean.ProperySourceBean;
+import com.hanson.bean.PropertySourceBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -18,7 +18,7 @@ public class PropertySourceConfiguration {
 
 
     @Bean
-    public ProperySourceBean properySourceBean() {
-        return new ProperySourceBean();
+    public PropertySourceBean propertySourceBean() {
+        return new PropertySourceBean();
     }
 }
