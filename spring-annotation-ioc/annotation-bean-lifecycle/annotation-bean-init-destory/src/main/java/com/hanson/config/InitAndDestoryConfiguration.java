@@ -25,7 +25,7 @@ import org.springframework.context.annotation.Configuration;
  * 2)、实现InitializingBean和DisposableBean接口
  * --2.1)、实现接口InitializingBean覆写afterPropertiesSet方法,该方法会在当前Bean对象创建成功并为属性赋值完成之后调用
  * --2.2)、实现接口DisposableBean覆写destroy方法,该方法会在容器关闭的时候调用[单例对象有效]
- * 3)、使用JSR250规范提供的两个注解@PostConstructor和@PreDestory
+ * 3)、使用JSR250规范提供的两个注解@PostConstructor和@PreDestroy
  * --3.1)、注解@PostConstructor标注在初始化方法上,该方法会在当前Bean对象创建成功并为属性赋值完成之后调用
  * --3.2)、注解@PreDestory标注在销毁方法上,该方法会在容器关闭的时候调用[单例对象有效]
  * 4)、实现{@link org.springframework.beans.factory.config.BeanPostProcessor }接口,在Bean初始化方法前后进行一些处理工作
