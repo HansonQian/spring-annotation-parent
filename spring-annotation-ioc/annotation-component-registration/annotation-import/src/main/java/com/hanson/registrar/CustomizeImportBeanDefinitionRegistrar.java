@@ -11,7 +11,7 @@ import org.springframework.core.type.AnnotationMetadata;
 /**
  * 自定义导入Bean定义的登记器，该方式为手工注册,即注册到容器的权限是由程序员手工控制
  */
-public class CustomImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegistrar {
+public class CustomizeImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegistrar {
     /**
      * @param importingClassMetadata 当前标注@Import注解的类的所有注解信息
      * @param registry               BeanDefinition注册类

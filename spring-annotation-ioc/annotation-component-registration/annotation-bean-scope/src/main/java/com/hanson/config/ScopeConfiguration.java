@@ -19,16 +19,13 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class ScopeConfiguration {
-
     @Bean
     public SingletonBean scopeBean() {
         return new SingletonBean();
     }
-
     @Bean
     @Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public PrototypeBean prototypeBean() {
         return new PrototypeBean();
     }
-
 }

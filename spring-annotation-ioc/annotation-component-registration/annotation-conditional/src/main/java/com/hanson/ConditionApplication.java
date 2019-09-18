@@ -11,11 +11,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ConditionApplication {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(ConditionConfiguration.class);
-
+        AnnotationConfigApplicationContext applicationContext =
+                new AnnotationConfigApplicationContext(ConditionConfiguration.class);
         OperatingSystem bean = applicationContext.getBean(OperatingSystem.class);
         System.out.println(bean);
-
         applicationContext.close();
 
     }

@@ -17,8 +17,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SpringConfiguration {
-
-
     @Bean
     public Person person() {
         Person person = new Person();
@@ -26,10 +24,8 @@ public class SpringConfiguration {
         person.setAge(20);
         return person;
     }
-
     @Bean
     public Runnable runnable(){
         return ()->{};
     }
-
 }

@@ -14,8 +14,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class ConditionConfiguration {
-
-
     @Bean
     @Conditional({WindowCondition.class})
     public OperatingSystem windows() {

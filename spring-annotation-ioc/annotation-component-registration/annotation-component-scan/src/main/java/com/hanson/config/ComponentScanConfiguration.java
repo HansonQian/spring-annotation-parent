@@ -28,8 +28,8 @@ import org.springframework.core.type.filter.TypeFilter;
 @Configuration
 @ComponentScan(basePackages = {"com.hanson"},
         includeFilters = {
-                @ComponentScan.Filter(type = FilterType.CUSTOM,classes = {CustomTypeFilter.class})},
+                @ComponentScan.Filter(type = FilterType.CUSTOM,
+                        classes = {CustomizeTypeFilter.class})},
         useDefaultFilters = false)
 public class ComponentScanConfiguration {
-
 }

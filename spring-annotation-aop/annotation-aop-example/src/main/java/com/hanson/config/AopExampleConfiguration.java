@@ -103,7 +103,7 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
  * 						4）、applyBeanPostProcessorsAfterInitialization()；执行后置处理器的postProcessAfterInitialization（）；
  * 				4）、BeanPostProcessor(AnnotationAwareAspectJAutoProxyCreator)创建成功；--》aspectJAdvisorsBuilder
  * 			7）、把BeanPostProcessor注册到BeanFactory中；
- * 				beanFactory.addBeanPostProcessor(postProcessor);
+ * 				beanFactory.addBeanPostProcessor(processor);
  * =======以上是创建和注册AnnotationAwareAspectJAutoProxyCreator的过程========
  *
  * 			AnnotationAwareAspectJAutoProxyCreator => InstantiationAwareBeanPostProcessor

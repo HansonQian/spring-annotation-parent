@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * 自定义类型过滤器
  */
-public class CustomTypeFilter implements TypeFilter {
+public class CustomizeTypeFilter implements TypeFilter {
     /**
      * @param metadataReader        读取到的当前正在扫描的类的信息
      * @param metadataReaderFactory 可以获取到其他任何类信息
@@ -26,12 +26,7 @@ public class CustomTypeFilter implements TypeFilter {
         ClassMetadata classMetadata = metadataReader.getClassMetadata();
         //获取当前类资源(类路径)
         String className = classMetadata.getClassName();
-
-        System.out.println("########################自定义类型过滤器########################" + className);
-
-        if (className.contains("er")) {
-            return true;
-        }
-        return false;
+        System.out.println("====" + className);
+        return className.contains("Controller");
     }
 }

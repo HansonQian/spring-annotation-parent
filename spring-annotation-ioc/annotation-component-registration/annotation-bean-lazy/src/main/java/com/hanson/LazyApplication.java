@@ -7,12 +7,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class LazyApplication {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(LazyConfiguration.class);
-
+        AnnotationConfigApplicationContext applicationContext =
+                new AnnotationConfigApplicationContext(LazyConfiguration.class);
         applicationContext.getBean(LazyBean.class);
-
         applicationContext.getBean(PositiveBean.class);
-
         applicationContext.close();
     }
 }

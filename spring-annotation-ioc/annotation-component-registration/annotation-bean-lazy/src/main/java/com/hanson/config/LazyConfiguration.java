@@ -15,13 +15,11 @@ import org.springframework.context.annotation.Lazy;
 
 @Configuration
 public class LazyConfiguration {
-
     @Bean
     @Lazy
     public LazyBean lazyBean() {
         return new LazyBean();
     }
-
     @Bean
     public PositiveBean positiveBean() {
         return new PositiveBean();
