@@ -6,7 +6,7 @@ import org.springframework.core.type.AnnotationMetadata;
 /**
  * 自定义导入选择器，该方式是将注册权限交给了容器可以理解为控制反转
  */
-public class CustomImportSelector implements ImportSelector {
+public class CustomizeImportSelector implements ImportSelector {
 
 
     /**
