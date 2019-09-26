@@ -11,7 +11,7 @@
 
     <artifactId>annotation-bean-init-destory</artifactId>
 
-    <name>annotation-bean-init-destory :: 基于注解指定Bean的初始化和销毁方法</name>
+    <name>annotation-bean-init-destroy :: 基于注解指定Bean的初始化和销毁方法</name>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>

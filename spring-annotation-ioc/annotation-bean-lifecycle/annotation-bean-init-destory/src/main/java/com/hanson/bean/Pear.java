@@ -26,8 +26,8 @@ public class Pear {
     }
 
     @PreDestroy
-    public void destory() {
-        System.out.println("####JSR250规范 Pear destory is called . . .");
+    public void destroy() {
+        System.out.println("####JSR250规范 Pear destroy is called . . .");
     }
 
     public String getColor() {

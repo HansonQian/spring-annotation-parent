@@ -50,7 +50,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-public class InitAndDestoryConfiguration {
+public class InitAndDestroyConfiguration {
 
     /**
      * 方式一:基于@Bean注解属性指定Bean的初始化和销毁方法
