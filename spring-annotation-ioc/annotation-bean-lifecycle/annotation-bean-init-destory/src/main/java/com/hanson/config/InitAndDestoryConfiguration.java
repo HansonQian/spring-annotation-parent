@@ -57,7 +57,7 @@ public class InitAndDestoryConfiguration {
      *
      * @return
      */
-    @Bean(initMethod = "init", destroyMethod = "destory")
+    @Bean(initMethod = "init", destroyMethod = "destroy")
     public Apple apple() {
         Apple apple = new Apple();
         apple.setColor("red");
@@ -93,7 +93,7 @@ public class InitAndDestoryConfiguration {
      *
      * @return
      */
-    @Bean(initMethod = "init", destroyMethod = "destory")
+    @Bean(initMethod = "init", destroyMethod = "destroy")
     public Orange orange() {
         Orange orange = new Orange();
         orange.setColor("Orange");

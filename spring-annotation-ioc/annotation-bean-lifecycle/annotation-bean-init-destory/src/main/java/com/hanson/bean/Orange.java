@@ -64,7 +64,7 @@ public class Orange implements BeanPostProcessor {
         System.out.println("****Implement BeanPostProcessor **** Orange init is called ...");
     }
 
-    public void destory() {
-        System.out.println("****Implement BeanPostProcessor **** Orange destory is called ...");
+    public void destroy() {
+        System.out.println("****Implement BeanPostProcessor **** Orange destroy is called ...");
     }
 }

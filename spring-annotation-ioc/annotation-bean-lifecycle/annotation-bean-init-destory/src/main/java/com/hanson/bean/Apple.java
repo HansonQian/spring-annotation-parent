@@ -20,8 +20,8 @@ public class Apple {
     }
 
 
-    public void destory() {
-        System.out.println("****Apple**** destory is called ...");
+    public void destroy() {
+        System.out.println("****Apple**** destroy is called ...");
     }
 
     public String getColor() {
