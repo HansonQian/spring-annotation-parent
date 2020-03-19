@@ -8,15 +8,10 @@ import java.util.Arrays;
 
 public class ValueApplication {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ValueConfiguration.class);
-
-        Arrays.asList(context.getBeanDefinitionNames()).forEach(System.out::println);
-
+        AnnotationConfigApplicationContext context
+                = new AnnotationConfigApplicationContext(ValueConfiguration.class);
         ValueBean valueBean = context.getBean(ValueBean.class);
-
         System.out.println(valueBean);
-
-
         context.close();
     }
 }

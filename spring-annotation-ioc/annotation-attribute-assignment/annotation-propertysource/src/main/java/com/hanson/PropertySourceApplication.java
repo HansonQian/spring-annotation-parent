@@ -10,9 +10,7 @@ public class PropertySourceApplication {
         context.register(PropertySourceConfiguration.class);
         context.refresh();
         PropertySourceBean bean = context.getBean(PropertySourceBean.class);
-
         System.out.println(bean);
-
         context.close();
     }
 }

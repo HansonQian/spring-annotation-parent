@@ -10,7 +10,7 @@ public class ValueBean {
      2、使用SpEL表达式：#{}
      3、使用${}取出配置文件中的值(在运行环境变量里面的值)
      */
-    @Value("钱海生")
+    @Value("hanson")
     private String name;
 
     @Value("#{27-2}")
